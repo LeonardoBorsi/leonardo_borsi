@@ -1,43 +1,45 @@
-import { nextui } from "@nextui-org/theme";
+import { nextui } from '@nextui-org/theme'
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./sections/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
-    "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
+    './components/**/*.{js,ts,jsx,tsx,mdx}',
+    './sections/**/*.{js,ts,jsx,tsx,mdx}',
+    './app/**/*.{js,ts,jsx,tsx,mdx}',
+    './node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}'
   ],
-  darkMode: "class",
+  darkMode: 'class',
   plugins: [
     nextui({
       themes: {
         light: {
           colors: {
+            background: '#FDFDFD',
             primary: {
-              DEFAULT: "#3c4fff",
-              foreground: "#FFF",
+              DEFAULT: '#3c4fff',
+              foreground: '#FFF'
             },
-            hucare: "#E8C12F",
-            fashionpo: "#CD0E1C",
-            multidata: "#1D59AF",
-            swarm: "#23955C",
-          },
+            hucare: '#E8C12F',
+            fashionpo: '#CD0E1C',
+            multidata: '#1D59AF',
+            swarm: '#23955C'
+          }
         },
         dark: {
           colors: {
-            background: "#1E1E1E",
+            /* background: '#1E1E1E', */
+            background: '#000',
             primary: {
-              DEFAULT: "#3c4fff",
-              foreground: "#FFF",
+              DEFAULT: '#3c4fff',
+              foreground: '#FFF'
             },
-            hucare: "#E8C12F",
-            fashionpo: "#CD0E1C",
-            multidata: "#1D59AF",
-            swarm: "#23955C",
-          },
-        },
-      },
-    }),
-  ],
-};
+            hucare: '#E8C12F',
+            fashionpo: '#CD0E1C',
+            multidata: '#1D59AF',
+            swarm: '#23955C'
+          }
+        }
+      }
+    })
+  ]
+}
