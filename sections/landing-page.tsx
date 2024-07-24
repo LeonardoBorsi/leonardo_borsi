@@ -59,7 +59,7 @@ export default function LandingPage() {
   return (
     <section>
       <div className='h-screen pb-20 lg:pb-32'>
-        <div className='h-full flex flex-col lg:flex-row justify-between pb-5 pt-10 lg:pb-20 lg:pt-20 gap-10'>
+        <div className='h-full flex flex-col lg:flex-row justify-between py-10 lg:py-20 gap-10'>
           <div className='text-center lg:text-left flex flex-col justify-between space-y-28'>
             <div className='space-y-10'>
               {renderTitles()}
