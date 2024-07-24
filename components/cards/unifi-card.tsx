@@ -4,10 +4,15 @@ import { Image } from "@nextui-org/image";
 import { Button, CardBody, CardFooter } from "@nextui-org/react";
 import NextImage from "next/image";
 import { ExternalLinkIcon } from "../icons";
+import Alg from "./courses/alg";
+import Lab from "./courses/lab";
+import PPM from "./courses/ppm";
+import SWE from "./courses/swe";
+import Thesis from "./courses/thesis";
 
 export default function UnifiCard() {
   return (
-    <Card className="border-default-700 border-2">
+    <Card className="dark:bg-dark-1000/50">
       <div className="p-2 md:p-4">
         <CardHeader className="flex flex-col sm:flex-row justify-between items-start gap-8">
           <div className="flex items-start sm:items-center gap-4 sm:gap-5">
@@ -67,8 +72,12 @@ export default function UnifiCard() {
             </span>
           </div>
         </CardHeader>
-        <CardBody>
-          <p className="text-xl md:text-2xl font-light">desc</p>
+        <CardBody className="space-y-5">
+          <Thesis />
+          <SWE />
+          <PPM />
+          <Alg />
+          <Lab />
         </CardBody>
         <CardFooter className="justify-between items-end">
           <Button

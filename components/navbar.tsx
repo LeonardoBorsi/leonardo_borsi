@@ -46,7 +46,7 @@ export const Navbar = () => {
       shouldHideOnScroll={false}
       maxWidth="2xl"
       position="sticky"
-      className={`transition-opacity duration-100	${
+      className={`dark:bg-dark-950 transition-opacity duration-100	${
         showNav ? "lg:opacity-100" : "lg:opacity-0"
       }`}
     >

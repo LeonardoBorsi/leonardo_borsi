@@ -13,19 +13,17 @@ import { ExternalLinkIcon } from "../icons";
 
 export default function KeylessCard() {
   return (
-    <Card className="bg-black dark:bg-white text-white dark:text-black">
+    <Card className="bg-black text-white">
       <CardContent
         title="Keyless"
         subtitle="Software Engineer"
         period="2023 - Present"
         imageSrc="/images/keyless-logo-letter-white.png"
         imageSize={50}
-        imageSrcDark="/images/keyless-logo-letter.png"
-        imageSizeDark={50}
         description="Development of Frontend projects related to privacy-focused passwordless biometric authentication, including internal and client-facing dashboards using the Next.js framework, and a web SDK developed with JavaScript and the Lit library"
         externalLink={
           <Button
-            className="text-base font-medium border-white text-white dark:text-black dark:border-black"
+            className="text-base font-medium border-white text-white"
             href="https://keyless.io"
             startContent={<ExternalLinkIcon />}
             variant="bordered"
@@ -34,24 +32,14 @@ export default function KeylessCard() {
           </Button>
         }
         skills={
-          <>
-            <div className="hidden dark:flex flex-wrap gap-2 sm:justify-end">
-              <NextChip color="bordered" />
-              <ReactChip color="bordered" />
-              <LitChip color="bordered" />
-              <PrismaChip color="bordered" />
-              <TypescriptChip color="bordered" />
-              <TailwindChip color="bordered" />
-            </div>
-            <div className="flex dark:hidden flex-wrap gap-2 sm:justify-end">
-              <NextChip color="white" />
-              <ReactChip color="white" />
-              <LitChip color="white" />
-              <PrismaChip color="white" />
-              <TypescriptChip color="white" />
-              <TailwindChip color="white" />
-            </div>
-          </>
+          <div className="flex flex-wrap gap-2 sm:justify-end">
+            <NextChip color="white" />
+            <ReactChip color="white" />
+            <LitChip color="white" />
+            <PrismaChip color="white" />
+            <TypescriptChip color="white" />
+            <TailwindChip color="white" />
+          </div>
         }
       />
     </Card>

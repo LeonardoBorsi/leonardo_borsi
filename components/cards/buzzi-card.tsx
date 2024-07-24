@@ -7,7 +7,7 @@ import { ExternalLinkIcon } from "../icons";
 
 export default function BuzziCard() {
   return (
-    <Card className="border-default-700 border-2">
+    <Card className="dark:bg-dark-1000/50">
       <div className="p-2 md:p-4">
         <CardHeader className="flex flex-col sm:flex-row justify-between items-start gap-8">
           <div className="flex items-start sm:items-center gap-4 sm:gap-5">
