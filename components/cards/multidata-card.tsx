@@ -26,8 +26,8 @@ export default function MultidataCard() {
         }
         skills={
           <div className="flex flex-wrap gap-2 sm:justify-end">
-            <HibernateChip color="white" />
-            <JavaChip color="white" />
+            <HibernateChip white />
+            <JavaChip white />
           </div>
         }
       />

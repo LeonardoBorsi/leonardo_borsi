@@ -26,7 +26,7 @@ export default function SwarmCard() {
         }
         skills={
           <div className="flex flex-wrap gap-2 sm:justify-end">
-            <ScriptChip color="white" />
+            <ScriptChip white />
           </div>
         }
       />

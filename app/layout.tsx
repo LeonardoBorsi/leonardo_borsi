@@ -27,15 +27,15 @@ export default function RootLayout({
 }) {
   return (
     <html suppressHydrationWarning lang="en">
-      <head className="dark:bg-dark-950" />
-      <body className="min-h-screen dark:bg-dark-950 font-sans antialiased ">
+      <head />
+      <body className="min-h-screen bg-background font-sans antialiased ">
         <Providers themeProps={{ attribute: "class", defaultTheme: "light" }}>
-          <div className="relative flex flex-col h-screen">
+          <div className="relative flex flex-col h-auto">
             <Navbar />
-            <main className="container dark:bg-dark-950 mx-auto max-w-screen-2xl px-5 lg:px-20 flex-grow">
+            <main className="container mx-auto max-w-screen-2xl px-5 lg:px-20 flex-grow">
               {children}
             </main>
-            <footer className="dark:bg-dark-950 w-full flex items-center justify-center py-3">
+            <footer className="w-full flex items-center justify-center py-3">
               <Link
                 isExternal
                 className="flex items-center gap-1 text-current"

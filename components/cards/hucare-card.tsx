@@ -32,11 +32,11 @@ export default function HucareCard() {
         }
         skills={
           <div className="flex flex-wrap gap-2 sm:justify-end">
-            <ReactChip color="white" />
-            <ReactNativeChip color="white" />
-            <TypescriptChip color="white" />
-            <GraphQLChip color="white" />
-            <MaterialUIChip color="white" />
+            <ReactChip white />
+            <ReactNativeChip white />
+            <TypescriptChip white />
+            <GraphQLChip white />
+            <MaterialUIChip white />
           </div>
         }
       />

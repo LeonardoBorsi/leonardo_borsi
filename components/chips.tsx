@@ -6,9 +6,21 @@ import React from "react";
 export function SkillChip(props: {
   label: string;
   image: React.ReactNode;
-  color: "white" | "bordered" | "theme";
+  white?: boolean;
 }) {
-  switch (props.color) {
+  return (
+    <Chip
+      startContent={props.image}
+      variant="flat"
+      className={`bg-white border-1.5 text-black ${
+        props.white ? "border-white" : "border-default-700 dark:border-white"
+      }`}
+    >
+      {props.label}
+    </Chip>
+  );
+
+  /* switch (props.color) {
     case "white":
       return (
         <Chip
@@ -39,127 +51,117 @@ export function SkillChip(props: {
           {props.label}
         </Chip>
       );
-  }
+  } */
 }
 
-export function BootstrapChip(props: {
-  color: "white" | "bordered" | "theme";
-}) {
+export function BootstrapChip(props: { white?: boolean }) {
   const label = "Bootstrap";
   const image = <Image src="/images/bootstrap.png" width={18} />;
 
-  return <SkillChip label={label} image={image} color={props.color} />;
+  return <SkillChip label={label} image={image} white={props.white} />;
 }
 
-export function GraphQLChip(props: { color: "white" | "bordered" | "theme" }) {
+export function GraphQLChip(props: { white?: boolean }) {
   const label = "GraphQL";
   const image = <Image src="/images/graphql.png" width={18} />;
 
-  return <SkillChip label={label} image={image} color={props.color} />;
+  return <SkillChip label={label} image={image} white={props.white} />;
 }
 
-export function HibernateChip(props: {
-  color: "white" | "bordered" | "theme";
-}) {
+export function HibernateChip(props: { white?: boolean }) {
   const label = "Hibernate";
   const image = <Image src="/images/hibernate.png" width={18} />;
 
-  return <SkillChip label={label} image={image} color={props.color} />;
+  return <SkillChip label={label} image={image} white={props.white} />;
 }
 
-export function JavaChip(props: { color: "white" | "bordered" | "theme" }) {
+export function JavaChip(props: { white?: boolean }) {
   const label = "Java";
   const image = <Image src="/images/java.png" width={18} />;
 
-  return <SkillChip label={label} image={image} color={props.color} />;
+  return <SkillChip label={label} image={image} white={props.white} />;
 }
 
-export function JQueryChip(props: { color: "white" | "bordered" | "theme" }) {
+export function JQueryChip(props: { white?: boolean }) {
   const label = "jQuery";
   const image = <Image src="/images/jquery.png" width={18} />;
 
-  return <SkillChip label={label} image={image} color={props.color} />;
+  return <SkillChip label={label} image={image} white={props.white} />;
 }
 
-export function LitChip(props: { color: "white" | "bordered" | "theme" }) {
+export function LitChip(props: { white?: boolean }) {
   const label = "Lit Element";
   const image = <Image src="/images/lit-logo.png" width={18} />;
 
-  return <SkillChip label={label} image={image} color={props.color} />;
+  return <SkillChip label={label} image={image} white={props.white} />;
 }
 
-export function MaterialUIChip(props: {
-  color: "white" | "bordered" | "theme";
-}) {
+export function MaterialUIChip(props: { white?: boolean }) {
   const label = "Material UI";
   const image = <Image src="/images/material-ui.png" width={18} />;
 
-  return <SkillChip label={label} image={image} color={props.color} />;
+  return <SkillChip label={label} image={image} white={props.white} />;
 }
 
-export function MySQLChip(props: { color: "white" | "bordered" | "theme" }) {
+export function MySQLChip(props: { white?: boolean }) {
   const label = "MySQL";
   const image = <Image src="/images/mysql.png" width={18} />;
 
-  return <SkillChip label={label} image={image} color={props.color} />;
+  return <SkillChip label={label} image={image} white={props.white} />;
 }
 
-export function NextChip(props: { color: "white" | "bordered" | "theme" }) {
+export function NextChip(props: { white?: boolean }) {
   const label = "Next.js";
   const image = <Image src="/images/next-js.svg" width={18} />;
 
-  return <SkillChip label={label} image={image} color={props.color} />;
+  return <SkillChip label={label} image={image} white={props.white} />;
 }
 
-export function PHPChip(props: { color: "white" | "bordered" | "theme" }) {
+export function PHPChip(props: { white?: boolean }) {
   const label = "PHP";
   const image = <Image src="/images/php.png" width={18} />;
 
-  return <SkillChip label={label} image={image} color={props.color} />;
+  return <SkillChip label={label} image={image} white={props.white} />;
 }
 
-export function PrismaChip(props: { color: "white" | "bordered" | "theme" }) {
+export function PrismaChip(props: { white?: boolean }) {
   const label = "Prisma";
   const image = <Image src="/images/prisma.png" width={18} />;
 
-  return <SkillChip label={label} image={image} color={props.color} />;
+  return <SkillChip label={label} image={image} white={props.white} />;
 }
 
-export function ReactChip(props: { color: "white" | "bordered" | "theme" }) {
+export function ReactChip(props: { white?: boolean }) {
   const label = "React";
   const image = <Image src="/images/react.png" width={20} />;
 
-  return <SkillChip label={label} image={image} color={props.color} />;
+  return <SkillChip label={label} image={image} white={props.white} />;
 }
 
-export function ReactNativeChip(props: {
-  color: "white" | "bordered" | "theme";
-}) {
+export function ReactNativeChip(props: { white?: boolean }) {
   const label = "React Native";
   const image = <Image src="/images/react.png" width={18} />;
 
-  return <SkillChip label={label} image={image} color={props.color} />;
+  return <SkillChip label={label} image={image} white={props.white} />;
 }
 
-export function ScriptChip(props: { color: "white" | "bordered" | "theme" }) {
+export function ScriptChip(props: { white?: boolean }) {
   const label = "Script";
   const image = <Image src="/images/script.jpg" width={18} />;
 
-  return <SkillChip label={label} image={image} color={props.color} />;
+  return <SkillChip label={label} image={image} white={props.white} />;
 }
 
-export function TailwindChip(props: { color: "white" | "bordered" | "theme" }) {
+export function TailwindChip(props: { white?: boolean }) {
   const label = "Tailwind";
   const image = <Image src="/images/tailwind.png" width={18} />;
 
-  return <SkillChip label={label} image={image} color={props.color} />;
+  return <SkillChip label={label} image={image} white={props.white} />;
 }
 
-export function TypescriptChip(props: {
-  color: "white" | "bordered" | "theme";
-}) {
+export function TypescriptChip(props: { white?: boolean }) {
   const label = "Typescript";
   const image = <Image src="/images/typescript.png" width={18} />;
 
-  return <SkillChip label={label} image={image} color={props.color} />;
+  return <SkillChip label={label} image={image} white={props.white} />;
 }

@@ -26,10 +26,10 @@ export default function FashionpoCard() {
         }
         skills={
           <div className="flex flex-wrap gap-2 sm:justify-end">
-            <PHPChip color="white" />
-            <JQueryChip color="white" />
-            <MySQLChip color="white" />
-            <BootstrapChip color="white" />
+            <PHPChip white />
+            <JQueryChip white />
+            <MySQLChip white />
+            <BootstrapChip white />
           </div>
         }
       />

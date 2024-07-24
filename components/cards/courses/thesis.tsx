@@ -33,7 +33,7 @@ export default function Thesis() {
           <GithubIcon size={28} />
         </Button>
         <div className="flex flex-wrap gap-2 sm:justify-end">
-          <JavaChip color="bordered" />
+          <JavaChip white />
         </div>
       </CardFooter>
     </Card>

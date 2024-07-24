@@ -7,7 +7,7 @@ export default function Alg() {
       course="Algoritmi e Strutture Dati"
       project="Binary Search Trees and Sorting Algorithms"
       description="Web application developed entirely with Django which simulates a management system used to assign domains to IP addresses. Project developed for the multimedia design and production exam and distributed with Ren"
-      skills={<JavaChip color="bordered" />}
+      skills={<JavaChip />}
     />
   );
 }
