@@ -12,9 +12,10 @@ export default function LandingPage() {
         </video>
       </div>
       <div className='hidden dark:block'>
-        <video className='w-[250px] lg:w-[350px]' autoPlay={true} loop muted>
+        {/*  <video className='w-[250px] lg:w-[350px]' autoPlay={true} loop muted>
           <source src='/videos/memoji-dark.mp4' type='video/mp4' />
-        </video>
+        </video> */}
+        <img className='w-[250px] lg:w-[350px]' src='/videos/memoji-dark.gif'></img>
       </div>
     </div>
   )
