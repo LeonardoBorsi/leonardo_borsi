@@ -67,9 +67,9 @@ export const DownloadIcon = ({ size = 20, width, height, ...props }: IconSvgProp
     viewBox='0 0 24 24'
     fill='none'
     stroke='currentColor'
-    stroke-width='2'
-    stroke-linecap='round'
-    stroke-linejoin='round'
+    strokeWidth='2'
+    strokeLinecap='round'
+    strokeLinejoin='round'
     {...props}
   >
     <path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' />
@@ -86,9 +86,9 @@ export const SendIcon = ({ size = 20, width, height, ...props }: IconSvgProps) =
     viewBox='0 0 24 24'
     fill='none'
     stroke='currentColor'
-    stroke-width='2'
-    stroke-linecap='round'
-    stroke-linejoin='round'
+    strokeWidth='2'
+    strokeLinecap='round'
+    strokeLinejoin='round'
     {...props}
   >
     <path d='m22 2-7 20-4-9-9-4Z' />
@@ -104,9 +104,9 @@ export const ExternalLinkIcon = ({ size = 20, width, height, ...props }: IconSvg
     viewBox='0 0 24 24'
     fill='none'
     stroke='currentColor'
-    stroke-width='2'
-    stroke-linecap='round'
-    stroke-linejoin='round'
+    strokeWidth='2'
+    strokeLinecap='round'
+    strokeLinejoin='round'
     {...props}
   >
     <path d='M15 3h6v6' />
