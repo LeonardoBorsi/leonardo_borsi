@@ -1,14 +1,16 @@
 'use client'
+
+import { ExternalLinkIcon } from '@/components/icons'
 import { Card, CardHeader } from '@nextui-org/card'
 import { Image } from '@nextui-org/image'
 import { Button, CardBody, CardFooter } from '@nextui-org/react'
 import NextImage from 'next/image'
-import { ExternalLinkIcon } from '../icons'
-import Alg from './courses/alg'
-import Lab from './courses/lab'
-import PPM from './courses/ppm'
-import SWE from './courses/swe'
-import Thesis from './courses/thesis'
+import Link from 'next/link'
+import Alg from './unifi-projects/alg'
+import Lab from './unifi-projects/lab'
+import PPM from './unifi-projects/ppm'
+import SWE from './unifi-projects/swe'
+import Thesis from './unifi-projects/thesis'
 
 export default function UnifiCard() {
   return (
@@ -28,11 +30,11 @@ export default function UnifiCard() {
           <div className='w-9/12 sm:w-auto flex flex-col'>
             <span className='font-medium text-2xl md:text-3xl'>Università degli Studi di Firenze</span>
             <span className='font-thin text-xl md:text-2xl'>Bachelor's degree in Computer Science and Engineering</span>
-            <span className='block md:hidden font-regular text-lg sm:text-xl text-nowrap	'>2020 - 2024</span>
+            <span className='block md:hidden font-regular text-lg sm:text-xl text-nowrap'>2020 - 2024</span>
           </div>
         </div>
         <div className='hidden md:block'>
-          <span className='font-regular text-lg md:text-xl text-nowrap	'>2020 - 2024</span>
+          <span className='font-regular text-lg md:text-xl text-nowrap'>2020 - 2024</span>
         </div>
       </CardHeader>
       <CardBody className='space-y-5'>
@@ -43,9 +45,11 @@ export default function UnifiCard() {
         <Lab />
       </CardBody>
       <CardFooter className='justify-between items-end'>
-        <Button className='text-base border-default-700' href='https://keyless.io' startContent={<ExternalLinkIcon />} variant='bordered'>
-          Corso di Studio
-        </Button>
+        <Link target='_blank' href='https://www.ing-inl.unifi.it/index.html'>
+          <Button className='text-base border-default-700' href='https://keyless.io' startContent={<ExternalLinkIcon />} variant='bordered'>
+            Degree Course
+          </Button>
+        </Link>
       </CardFooter>
     </Card>
   )

@@ -1,12 +1,10 @@
-import { Button } from '@nextui-org/button'
 import { Card } from '@nextui-org/card'
-import CardContent from '../card-content'
-import { LitChip, NextChip, PrismaChip, ReactChip, TailwindChip, TypescriptChip } from '../chips'
-import { ExternalLinkIcon } from '../icons'
+import CardContent from '../../card-content'
+import { LitChip, NextChip, PrismaChip, ReactChip, TailwindChip, TypeScriptChip } from '../../chips'
 
 export default function KeylessCard() {
   return (
-    <Card className='bg-black text-white'>
+    <Card className='bg-black text-white dark:border-white/25 dark:border-1'>
       <CardContent
         title='Keyless'
         subtitle='Software Engineer'
@@ -14,18 +12,14 @@ export default function KeylessCard() {
         imageSrc='/images/keyless-white.png'
         imageSize={50}
         description='Development of Frontend projects related to privacy-focused passwordless biometric authentication, including internal and client-facing dashboards using the Next.js framework, and a web SDK developed with JavaScript and the Lit library'
-        externalLink={
-          <Button className='text-base font-medium border-white text-white' href='https://keyless.io' startContent={<ExternalLinkIcon />} variant='bordered'>
-            Keyless Website
-          </Button>
-        }
+        externalLink='https://keyless.io'
         skills={
           <div className='flex flex-wrap gap-2 sm:justify-end'>
             <NextChip white />
             <ReactChip white />
             <LitChip white />
             <PrismaChip white />
-            <TypescriptChip white />
+            <TypeScriptChip white />
             <TailwindChip white />
           </div>
         }

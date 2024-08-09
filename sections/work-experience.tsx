@@ -1,16 +1,14 @@
-'use client'
-import FashionpoCard from '@/components/cards/fashionpo-card'
-import HucareCard from '@/components/cards/hucare-card'
-import KeylessCard from '@/components/cards/keyless-card'
-import MultidataCard from '@/components/cards/multidata-card'
-import SwarmCard from '@/components/cards/swarm-card'
+import FashionpoCard from '@/components/cards/work-experience/fashionpo-card'
+import HucareCard from '@/components/cards/work-experience/hucare-card'
+import KeylessCard from '@/components/cards/work-experience/keyless-card'
+import MultidataCard from '@/components/cards/work-experience/multidata-card'
+import SwarmCard from '@/components/cards/work-experience/swarm-card'
+import SectionTitle from '@/components/section-title'
 
 export default function WorkExperience() {
   return (
     <section className='flex flex-col gap-7'>
-      <div id='work-experience' className='text-center py-5 lg:py-10'>
-        <h2 className='text-4xl lg:text-5xl font-medium'>Work Experience</h2>
-      </div>
+      <SectionTitle title='Work Experience' anchorId='work-experience' />
       <KeylessCard />
       <HucareCard />
       <FashionpoCard />

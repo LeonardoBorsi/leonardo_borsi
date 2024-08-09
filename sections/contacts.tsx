@@ -1,11 +1,13 @@
-"use client";
+import { ContactForm } from '@/components/contact-form'
+import ContactsList from '@/components/contacts-list'
+import SectionTitle from '@/components/section-title'
 
 export default function Contacts() {
   return (
-    <section className="flex flex-col gap-7">
-      <div id="contacts" className="text-center py-10">
-        <h2 className="text-5xl font-medium">Contacts</h2>
-      </div>
+    <section className='flex flex-col gap-7 max-w-screen-sm sm:mx-auto'>
+      <SectionTitle title='Contacts' anchorId='contacts' />
+      <ContactsList />
+      <ContactForm />
     </section>
-  );
+  )
 }

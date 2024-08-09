@@ -1,5 +1,5 @@
 import { DownloadIcon, GithubIcon, LinkedinIcon, SendIcon } from '@/components/icons'
-import { PAGE_ANCHORS } from '@/definitions/costants'
+import { GITHUB_PROFILE, LINKEDIN_PROFILE, PAGE_ANCHORS } from '@/definitions/costants'
 import { Button } from '@nextui-org/button'
 import Link from 'next/link'
 
@@ -7,15 +7,15 @@ export default function LandingPage() {
   const renderMemoji = () => (
     <div>
       <div className='block dark:hidden'>
-        <video className='w-[250px] lg:w-[350px]' autoPlay={true} loop muted>
+        {/* <video className='w-[250px] lg:w-[350px]' autoPlay={true} loop muted>
           <source src='/videos/memoji-light.mp4' type='video/mp4' />
-        </video>
+        </video> */}
       </div>
       <div className='hidden dark:block'>
         {/*  <video className='w-[250px] lg:w-[350px]' autoPlay={true} loop muted>
           <source src='/videos/memoji-dark.mp4' type='video/mp4' />
         </video> */}
-        <img className='w-[250px] lg:w-[350px]' src='/videos/memoji-dark.gif'></img>
+        {/* <img className='w-[250px] lg:w-[350px]' src='/videos/memoji-dark.gif'></img> */}
       </div>
     </div>
   )
@@ -31,12 +31,16 @@ export default function LandingPage() {
   const renderButtons = () => (
     <div className='flex flex-col sm:flex-row justify-center lg:justify-start gap-5'>
       <div className='flex gap-5'>
-        <Button isIconOnly className='text-sm font-medium border-default-700 w-1/2' variant='bordered' size='lg'>
-          <GithubIcon size={28} />
-        </Button>
-        <Button isIconOnly className='text-sm font-medium border-default-700 w-1/2' variant='bordered' size='lg'>
-          <LinkedinIcon size={28} />
-        </Button>
+        <Link className='w-1/2' target='_blank' href={GITHUB_PROFILE}>
+          <Button isIconOnly className='text-sm font-medium border-default-700 w-full' variant='bordered' size='lg'>
+            <GithubIcon size={28} />
+          </Button>
+        </Link>
+        <Link className='w-1/2' target='_blank' href={LINKEDIN_PROFILE}>
+          <Button isIconOnly className='text-sm font-medium border-default-700 w-full' variant='bordered' size='lg'>
+            <LinkedinIcon size={28} />
+          </Button>
+        </Link>
       </div>
       <Button className='text-base font-medium border-default-700' href='#' startContent={<DownloadIcon />} variant='bordered' size='lg'>
         Download CV

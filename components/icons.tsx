@@ -59,6 +59,17 @@ export const LinkedinIcon: React.FC<IconSvgProps> = ({ size = 28, width, height,
   )
 }
 
+export const YouTubeIcon: React.FC<IconSvgProps> = ({ size = 24, width, height, ...props }) => {
+  return (
+    <svg xmlns='http://www.w3.org/2000/svg' width={size || width} height={size || height} viewBox='0 0 50 50' {...props}>
+      <path
+        d='M 44.898438 14.5 C 44.5 12.300781 42.601563 10.699219 40.398438 10.199219 C 37.101563 9.5 31 9 24.398438 9 C 17.800781 9 11.601563 9.5 8.300781 10.199219 C 6.101563 10.699219 4.199219 12.199219 3.800781 14.5 C 3.398438 17 3 20.5 3 25 C 3 29.5 3.398438 33 3.898438 35.5 C 4.300781 37.699219 6.199219 39.300781 8.398438 39.800781 C 11.898438 40.5 17.898438 41 24.5 41 C 31.101563 41 37.101563 40.5 40.601563 39.800781 C 42.800781 39.300781 44.699219 37.800781 45.101563 35.5 C 45.5 33 46 29.398438 46.101563 25 C 45.898438 20.5 45.398438 17 44.898438 14.5 Z M 19 32 L 19 18 L 31.199219 25 Z'
+        fill='currentColor'
+      />
+    </svg>
+  )
+}
+
 export const DownloadIcon = ({ size = 20, width, height, ...props }: IconSvgProps) => (
   <svg
     xmlns='http://www.w3.org/2000/svg'
@@ -93,6 +104,30 @@ export const SendIcon = ({ size = 20, width, height, ...props }: IconSvgProps) =
   >
     <path d='m22 2-7 20-4-9-9-4Z' />
     <path d='M22 2 11 13' />
+  </svg>
+)
+
+export const PhoneIcon = ({ size = 20, width, height, ...props }: IconSvgProps) => (
+  <svg xmlns='http://www.w3.org/2000/svg' height={size || height} width={size || width} viewBox='0 0 24 24' fill='currentColor' {...props}>
+    <path d='M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z' />
+  </svg>
+)
+
+export const MailIcon = ({ size = 20, width, height, ...props }: IconSvgProps) => (
+  <svg
+    xmlns='http://www.w3.org/2000/svg'
+    height={size || height}
+    width={size || width}
+    viewBox='0 0 24 24'
+    fill='none'
+    stroke='currentColor'
+    strokeWidth='2'
+    strokeLinecap='round'
+    strokeLinejoin='round'
+    {...props}
+  >
+    <rect width='20' height='16' x='2' y='4' rx='2' />
+    <path d='m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7' />
   </svg>
 )
 
