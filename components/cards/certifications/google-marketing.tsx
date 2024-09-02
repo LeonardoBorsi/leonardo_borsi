@@ -11,7 +11,7 @@ export default function GoogleMarketing() {
             <Image className='block sm:hidden min-w-[120px]' as={NextImage} width={120} height={40} src='/images/google-digital-garage.png' radius='none' />
             <Image className='hidden sm:block min-w-[165px]' as={NextImage} width={165} height={55} src='/images/google-digital-garage.png' radius='none' />
           </div>
-          <div>
+          <div className='text-center md:text-left'>
             <span className='font-light text-xl md:text-2xl'>Fundamentals of Digital Marketing</span>
           </div>
         </div>

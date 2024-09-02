@@ -7,6 +7,8 @@ export default function Alg() {
       course='Algorithms and Data Structures'
       project='Binary Search Trees and Sorting Algorithms'
       description='This project, developed for the laboratory examination in algorithms and data structures, includes a performance and cost comparison of three types of binary trees—Binary Search Tree (BST), Red-Black Tree (RBT), and Adelson-Velsky and Landis Tree (AVL)—using Python tests, and a comparative study of Quick Sort and Insertion Sort algorithms conducted in Jupyter Notebook.'
+      linkPDF='/files/Leonardo Borsi - Relazione Alberi di Ricerca.pdf'
+      linkPDFLabel='Download Report'
       skills={<PythonChip />}
     />
   )

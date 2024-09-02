@@ -11,7 +11,21 @@ export default function FashionpoCard() {
         period='2021 - 2022'
         imageSrc='/images/fashionpo-logo-white.png'
         imageSize={60}
-        description='Development of B2B Ecommerce and related CMS using PHP and HTML/jQuery. Restyling of the UX/UI of both desktop and mobile versions.  Design and development of a labeling system via Zebra printers used to optimize warehouse operations.'
+        description={
+          <>
+            Worked at a B2B e-commerce company specializing in wholesale women's apparel, focusing on both the e-commerce platform and its CMS
+            <ul className='list-inside list-disc'>
+              <li>
+                Led a complete redesign of the e-commerce site, from creating mock-ups to final implementation, while preserving the original stack of PHP,
+                HTML/CSS and jQuery
+              </li>
+              <li>
+                Designed and implemented a comprehensive labeling system for inventory management, utilizing Zebra printers for labels and mobile devices with
+                scanners to efficiently manage the movement of goods from suppliers to the warehouse and facilitate package preparation for shipment
+              </li>
+            </ul>
+          </>
+        }
         externalLink='https://www.fashionpo.com'
         skills={
           <div className='flex flex-wrap gap-2 sm:justify-end'>

@@ -10,6 +10,7 @@ export default function LandingPage() {
         {/* <video className='w-[250px] lg:w-[350px]' autoPlay={true} loop muted>
           <source src='/videos/memoji-light.mp4' type='video/mp4' />
         </video> */}
+        <img className='w-[250px] lg:w-[350px]' src='/gifs/memoji-light.gif'></img>
       </div>
       <div className='hidden dark:block'>
         {/*  <video className='w-[250px] lg:w-[350px]' autoPlay={true} loop muted>
@@ -42,7 +43,15 @@ export default function LandingPage() {
           </Button>
         </Link>
       </div>
-      <Button className='text-base font-medium border-default-700' href='#' startContent={<DownloadIcon />} variant='bordered' size='lg'>
+      <Button
+        as={Link}
+        className='text-base font-medium border-default-700'
+        href='/files/Leonardo Borsi - CV.pdf'
+        startContent={<DownloadIcon />}
+        variant='bordered'
+        size='lg'
+        target='_blank'
+      >
         Download CV
       </Button>
       <Button as={Link} color='primary' className='text-base font-medium bg-primary' href='#contacts' startContent={<SendIcon />} variant='solid' size='lg'>
@@ -72,7 +81,7 @@ export default function LandingPage() {
             </div>
             <div className='hidden lg:block'>{renderAnchors()}</div>
           </div>
-          <div className='flex items-center justify-center lg:pr-10'>{renderMemoji()}</div>
+          <div className='flex items-center justify-center lg:pr-10'>{/* renderMemoji() */}</div>
           <div className='block lg:hidden'>{renderButtons()}</div>
         </div>
       </div>

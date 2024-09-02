@@ -11,7 +11,7 @@ export default function SwarmCard() {
         period='2018'
         imageSrc='/images/the-swarm-logo-white.png'
         imageSize={60}
-        description='Assembly of servers intended for Cloud Storage and script development  batches intended for testing.'
+        description='Focused on assembling cloud storage servers and developing bash scripts for equipment testing and quality assurance'
         externalLink='https://www.linkedin.com/company/theswarm/about/'
         skills={
           <div className='flex flex-wrap gap-2 sm:justify-end'>

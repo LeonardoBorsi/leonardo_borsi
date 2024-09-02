@@ -6,8 +6,10 @@ export default function SWE() {
     <Project
       course=' Software Engineering'
       project='B2B Fashion Ecommerce'
-      description='Web application developed entirely with Django which simulates a management system used to assign domains to IP addresses. Project developed for the multimedia design and production exam and distributed with Ren'
+      description='Development of the backend for a B2B clothing e-commerce application, including requirements analysis, mock-up creation, implementation of backend services using Java and PostgreSQL, and testing with JUnit.'
       linkGithub='https://github.com/LeonardoBorsi/fashion-b2b'
+      linkPDF='/files/Leonardo Borsi - Relazione Progetto SWE.pdf'
+      linkPDFLabel='Download Report'
       skills={
         <>
           <JavaChip />

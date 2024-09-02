@@ -13,7 +13,7 @@ interface ExperienceCardProps {
   imageSize: number
   imageSrcDark?: string
   imageSizeDark?: number
-  description?: string
+  description?: string | React.ReactNode
   children?: React.ReactNode
   externalLink?: string
   skills?: React.ReactNode
@@ -55,7 +55,7 @@ export default function CardContent(props: ExperienceCardProps) {
         </div>
       </CardHeader>
       <CardBody>
-        {props.description && <p className='text-xl md:text-2xl font-light'>{props.description}</p>}
+        {props.description && <div className='text-xl md:text-2xl font-light'>{props.description}</div>}
         {props.children}
       </CardBody>
       <CardFooter className='flex flex-col flex-col-reverse sm:flex-row justify-between items-start sm:items-end gap-4'>

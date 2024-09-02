@@ -11,7 +11,7 @@ export default function MultidataCard() {
         period='2020 - 2021'
         imageSrc='/images/multidata-white.png'
         imageSize={60}
-        description='Development of APIs for a web applications ecosystem aimed at  companies textile supply chain via Hibernate.'
+        description='Contributed to backend services at a company specializing in management solutions for the textile industry by developing APIs with Spring and optimizing database queries using Hibernate'
         externalLink='https://www.multidata.org'
         skills={
           <div className='flex flex-wrap gap-2 sm:justify-end'>

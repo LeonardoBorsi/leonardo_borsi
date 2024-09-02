@@ -1,4 +1,4 @@
-import { GithubIcon, YouTubeIcon } from '@/components/icons'
+import { DownloadIcon, GithubIcon, YouTubeIcon } from '@/components/icons'
 import { Button } from '@nextui-org/button'
 import { Card, CardBody, CardFooter, CardHeader } from '@nextui-org/card'
 import Link from 'next/link'
@@ -11,6 +11,7 @@ interface ProjectProps {
   linkYoutube?: string
   linkGithub?: string
   linkPDF?: string
+  linkPDFLabel?: string
   project: string
   skills?: React.ReactNode
 }
@@ -35,6 +36,14 @@ export default function Project(props: ProjectProps) {
               </Button>
             </Link>
           )}
+          {props.linkPDF && (
+            <Link target='_blank' href={props.linkPDF}>
+              <Button className='text-base font-medium border-default-700' startContent={<DownloadIcon />} variant='bordered'>
+                {props.linkPDFLabel}
+              </Button>
+            </Link>
+          )}
+
           {props.linkYoutube && (
             <Link target='_blank' href={props.linkYoutube}>
               <Button className='text-base font-medium border-default-700' href='#' startContent={<YouTubeIcon color='red' size={28} />} variant='bordered'>
