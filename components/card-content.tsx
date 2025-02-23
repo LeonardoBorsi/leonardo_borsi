@@ -3,12 +3,12 @@ import { Image } from '@nextui-org/image'
 import { Button, CardBody, CardFooter, CardHeader } from '@nextui-org/react'
 import NextImage from 'next/image'
 import Link from 'next/link'
-import { ExternalLinkIcon } from './icons'
+import { DownloadIcon, ExternalLinkIcon, GithubIcon } from './icons'
 
 interface ExperienceCardProps {
-  title: string
-  subtitle: string
-  period: string
+  title?: string
+  subtitle?: string
+  period?: string
   imageSrc: string
   imageSize: number
   imageSrcDark?: string
@@ -16,7 +16,12 @@ interface ExperienceCardProps {
   description?: string | React.ReactNode
   children?: React.ReactNode
   externalLink?: string
+  externalLinkLabel?: string
+  linkGithub?: string
+  linkPDF?: string
+  linkPDFLabel?: string
   skills?: React.ReactNode
+  whiteButtons?: boolean
 }
 
 export default function CardContent(props: ExperienceCardProps) {
@@ -59,13 +64,41 @@ export default function CardContent(props: ExperienceCardProps) {
         {props.children}
       </CardBody>
       <CardFooter className='flex flex-col flex-col-reverse sm:flex-row justify-between items-start sm:items-end gap-4'>
-        {props.externalLink && (
-          <Link target='_blank' href={props.externalLink}>
-            <Button className='text-base font-medium border-white text-white' startContent={<ExternalLinkIcon />} variant='bordered'>
-              {props.title} Website
-            </Button>
-          </Link>
-        )}
+        <div className='flex gap-2'>
+          {props.linkGithub && (
+            <Link target='_blank' href={props.linkGithub}>
+              <Button
+                isIconOnly
+                className={`text-base font-medium ${props.whiteButtons ? 'border-white text-white' : 'border-default-700'}`}
+                variant='bordered'
+              >
+                <GithubIcon size={28} />
+              </Button>
+            </Link>
+          )}
+          {props.linkPDF && (
+            <Link target='_blank' href={props.linkPDF}>
+              <Button
+                className={`text-base font-medium ${props.whiteButtons ? 'border-white text-white' : 'border-default-700'}`}
+                startContent={<DownloadIcon />}
+                variant='bordered'
+              >
+                {props.linkPDFLabel}
+              </Button>
+            </Link>
+          )}
+          {props.externalLink && (
+            <Link target='_blank' href={props.externalLink}>
+              <Button
+                className={`text-base font-medium ${props.whiteButtons ? 'border-white text-white' : 'border-default-700'}`}
+                startContent={<ExternalLinkIcon />}
+                variant='bordered'
+              >
+                {props.externalLinkLabel ? props.externalLinkLabel : `${props.title} Website`}
+              </Button>
+            </Link>
+          )}
+        </div>
         {props.skills}
       </CardFooter>
     </div>

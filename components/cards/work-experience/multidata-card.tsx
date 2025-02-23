@@ -9,7 +9,7 @@ export default function MultidataCard() {
         title='Multidata'
         subtitle='Backend Developer Intern'
         period='2020 - 2021'
-        imageSrc='/images/multidata-white.png'
+        imageSrc='/images/multidata/multidata-white.png'
         imageSize={60}
         description='Contributed to backend services at a company specializing in management solutions for the textile industry by developing APIs with Spring and optimizing database queries using Hibernate'
         externalLink='https://www.multidata.org'
@@ -19,6 +19,7 @@ export default function MultidataCard() {
             <JavaChip white />
           </div>
         }
+        whiteButtons
       />
     </Card>
   )

@@ -9,7 +9,7 @@ export default function SwarmCard() {
         title='The SwARM'
         subtitle='Summer Internship'
         period='2018'
-        imageSrc='/images/the-swarm-logo-white.png'
+        imageSrc='/images/the-swarm/the-swarm-logo-white.png'
         imageSize={60}
         description='Focused on assembling cloud storage servers and developing bash scripts for equipment testing and quality assurance'
         externalLink='https://www.linkedin.com/company/theswarm/about/'
@@ -18,6 +18,7 @@ export default function SwarmCard() {
             <ScriptChip white />
           </div>
         }
+        whiteButtons
       />
     </Card>
   )

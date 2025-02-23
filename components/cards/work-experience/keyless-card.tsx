@@ -9,7 +9,7 @@ export default function KeylessCard() {
         title='Keyless'
         subtitle='Frontend Software Engineer'
         period='2023 - Present'
-        imageSrc='/images/keyless-white.png'
+        imageSrc='/images/keyless/keyless-white.png'
         imageSize={50}
         description={
           <>
@@ -35,6 +35,7 @@ export default function KeylessCard() {
             <TailwindChip white />
           </div>
         }
+        whiteButtons
       />
     </Card>
   )

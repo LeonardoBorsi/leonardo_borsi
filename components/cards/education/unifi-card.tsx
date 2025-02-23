@@ -19,12 +19,12 @@ export default function UnifiCard() {
         <div className='flex items-start sm:items-center gap-4 sm:gap-5'>
           <div className='max-w-3/12 sm:w-auto flex justify-center'>
             <div className='dark:hidden w-fit'>
-              <Image className='block sm:hidden  min-w-[75px]' as={NextImage} width={75} height={75} src='/images/unifi.png' radius='none' />
-              <Image className='hidden sm:block min-w-[100px]' as={NextImage} width={100} height={100} src='/images/unifi.png' radius='none' />
+              <Image className='block sm:hidden  min-w-[75px]' as={NextImage} width={75} height={75} src='/images/unifi/unifi.png' radius='none' />
+              <Image className='hidden sm:block min-w-[100px]' as={NextImage} width={100} height={100} src='/images/unifi/unifi.png' radius='none' />
             </div>
             <div className='hidden dark:block w-fit'>
-              <Image className='block sm:hidden min-w-[75px]' as={NextImage} width={75} height={75} src='/images/unifi-white.png' radius='none' />
-              <Image className='hidden sm:block min-w-[100px]' as={NextImage} width={100} height={100} src='/images/unifi-white.png' radius='none' />
+              <Image className='block sm:hidden min-w-[75px]' as={NextImage} width={75} height={75} src='/images/unifi/unifi-white.png' radius='none' />
+              <Image className='hidden sm:block min-w-[100px]' as={NextImage} width={100} height={100} src='/images/unifi/unifi-white.png' radius='none' />
             </div>
           </div>
           <div className='w-9/12 sm:w-auto flex flex-col'>
@@ -46,7 +46,7 @@ export default function UnifiCard() {
       </CardBody>
       <CardFooter className='justify-between items-end'>
         <Link target='_blank' href='https://www.ing-inl.unifi.it/index.html'>
-          <Button className='text-base border-default-700' href='https://keyless.io' startContent={<ExternalLinkIcon />} variant='bordered'>
+          <Button className='text-base border-default-700' startContent={<ExternalLinkIcon />} variant='bordered'>
             Degree Course
           </Button>
         </Link>

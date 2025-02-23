@@ -43,7 +43,6 @@ export default function Project(props: ProjectProps) {
               </Button>
             </Link>
           )}
-
           {props.linkYoutube && (
             <Link target='_blank' href={props.linkYoutube}>
               <Button className='text-base font-medium border-default-700' href='#' startContent={<YouTubeIcon color='red' size={28} />} variant='bordered'>
